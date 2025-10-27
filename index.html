@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profil Kelas X PPLG 1 SMK Pariwisata Metland School: anggota, penghargaan, dan kegiatan.">
+    <title>Kelas X PPLG 1 - SMK Pariwisata Metland School Cileungsi</title>
+    <meta property="og:title" content="Kelas X PPLG 1 - SMK Pariwisata Metland School">
+    <meta property="og:description" content="Kenal lebih dekat dengan Kelas X PPLG 1: anggota, penghargaan, dan kegiatan.">
+    <meta property="og:image" content="images/XPPLG1.jpg">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="images/Logo%20Tab.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #41b381 0%, #4fadb1 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: white;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .school-info h1 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 2px;
+        }
+
+        .school-info p {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu li a:hover {
+            color: #667eea;
+        }
+
+        .nav-menu li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #667eea, #4ba285);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu li a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-top: 100px;
+            padding: 40px 0;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 60px;
+            color: white;
+            position: relative;
+            padding: 80px 20px;
+            background-image: url('images/XPPLG1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(65, 179, 129, 0.75) 0%, rgba(75, 145, 162, 0.75) 100%);
+            backdrop-filter: blur(1px);
+            z-index: 0;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Class Info Section */
+        .class-info {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .class-info h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #41b381, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .class-description {
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* Students Grid */
+        .students-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .students-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            background: linear-gradient(45deg,#41b381, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .student-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: visible;
+        }
+
+        .student-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .student-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 3px solid #41b381;
+            box-shadow: 0 4px 15px rgba(65, 179, 129, 0.3);
+        }
+
+        .student-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .student-card:hover .student-photo img {
+            transform: scale(1.1);
+        }
+
+        .student-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .student-role {
+            font-size: 0.9rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        /* Chips */
+        .chips { display:flex; gap:6px; justify-content:center; flex-wrap:wrap; margin-top:8px; }
+        .chip {
+            font-size: 0.7rem;
+            background: rgba(65,179,129,0.12);
+            color: #2d6a5a;
+            border: 1px solid rgba(65,179,129,0.35);
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+
+        /* Wrapper untuk nama dan role di mobile */
+        @media (max-width: 575px) {
+            .student-name + .student-role {
+                margin-top: 2px;
+            }
+        }
+
+        /* Wali Kelas Card - Special Styling */
+        .wali-card {
+            background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+            border: 3px solid #ffd700;
+            box-shadow: 0 10px 30px rgba(118, 75, 162, 0.4);
+            position: relative;
+            overflow: visible;
+        }
+
+        .wali-card:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(118, 75, 162, 0.6);
+        }
+
+        .teacher-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #764ba2;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+            animation: pulse 2s infinite;
+            z-index: 10;
+        }
+
+        .talented-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #2d6a5a;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+            animation: pulse 2s infinite;
+            z-index: 10;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .teacher-photo {
+            border: 4px solid #ffd700;
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5);
+            width: 100px;
+            height: 100px;
+            margin: 10px auto 20px;
+        }
+
+        .teacher-name {
+            font-size: 1.1rem;
+            color: white;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+        }
+
+        .teacher-role {
+            font-size: 1rem;
+            color: #ffd700;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-top: 5px;
+        }
+
+        /* Awards Section */
+        .awards-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .awards-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            background: linear-gradient(45deg, #41b381, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .award-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .award-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .award-icon {
+            font-size: 3rem;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+
+        .award-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .award-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .nav-menu {
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            gap: 15px;
+        }
+
+        /* Responsive Design */
+        
+        /* Large Desktop (1200px+) */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1400px;
+            }
+            
+            .hero-section h1 {
+                font-size: 4rem;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            
+            .awards-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* Desktop (992px - 1199px) */
+        @media (max-width: 1199px) and (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+            
+            .hero-section h1 {
+                font-size: 3.5rem;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            
+            .awards-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Tablet (768px - 991px) */
+        @media (max-width: 991px) and (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+            
+            .hero-section h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 25px;
+            }
+            
+            .awards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .class-info, .students-section, .awards-section {
+                padding: 30px;
+            }
+            
+            .student-card {
+                padding: 15px;
+            }
+            
+            .student-photo {
+                width: 70px;
+                height: 70px;
+                border: 2px solid #41b381;
+            }
+        }
+
+        /* Mobile Landscape (576px - 767px) */
+        @media (max-width: 767px) and (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+            
+            .header-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .hero-section {
+                background-attachment: scroll;
+            }
+            
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-section p {
+                font-size: 1rem;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            /* Wali Card - full width di tablet */
+            .wali-card {
+                grid-column: 1 / -1;
+                margin-bottom: 25px;
+            }
+            
+            .awards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .class-info, .students-section, .awards-section {
+                padding: 25px;
+            }
+            
+            .student-card {
+                padding: 15px;
+                min-height: 140px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .student-photo {
+                width: 60px;
+                height: 60px;
+                border: 2px solid #41b381;
+                margin-bottom: 10px;
+            }
+            
+            .student-name {
+                font-size: 0.9rem;
+                text-align: center;
+                line-height: 1.3;
+            }
+            
+            .student-role {
+                font-size: 0.8rem;
+                text-align: center;
+            }
+
+            /* Wali Card Mobile */
+            .wali-card .teacher-badge {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                top: -10px;
+                right: -10px;
+            }
+
+            .teacher-photo {
+                width: 80px;
+                height: 80px;
+            }
+
+            .teacher-name {
+                font-size: 1rem;
+            }
+
+            .teacher-role {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Mobile Portrait (max-width: 575px) */
+        @media (max-width: 575px) {
+            .container {
+                max-width: 100%;
+                padding: 0 15px;
+            }
+            
+            .header {
+                padding: 0;
+            }
+            
+            .header-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+            }
+            
+            .logo {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .school-info h1 {
+                font-size: 14px;
+            }
+            
+            .school-info p {
+                font-size: 10px;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+                font-size: 1.2rem;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                gap: 15px;
+                z-index: 1000;
+            }
+            
+            .main-content {
+                margin-top: 80px;
+            }
+            
+            .hero-section {
+                padding: 40px 20px;
+                background-attachment: scroll;
+            }
+            
+            .hero-section h1 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+            
+            .hero-section p {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+            
+            .class-info h2, .students-section h2, .awards-section h2 {
+                font-size: 1.8rem;
+                margin-bottom: 25px;
+            }
+            
+            .class-description {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            /* Wali Card - full width di mobile */
+            .wali-card {
+                grid-column: 1 / -1;
+                margin-bottom: 20px;
+            }
+            
+            .awards-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .class-info, .students-section, .awards-section {
+                padding: 20px;
+                margin-bottom: 40px;
+            }
+            
+            .student-card {
+                padding: 10px;
+                min-height: auto;
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                gap: 12px;
+                align-items: center;
+            }
+            
+            .student-photo {
+                width: 50px;
+                height: 50px;
+                border: 2px solid #41b381;
+                margin: 0;
+                grid-row: 1 / 3;
+                align-self: center;
+            }
+
+            .student-name {
+                font-size: 0.85rem;
+                margin-bottom: 3px;
+                text-align: left;
+                line-height: 1.2;
+                font-weight: 600;
+                grid-column: 2;
+            }
+            
+            .student-role {
+                font-size: 0.7rem;
+                text-align: left;
+                grid-column: 2;
+            }
+
+            .chips {
+                grid-column: 2;
+                grid-row: 3;
+                margin-top: 5px;
+                justify-content: flex-start;
+            }
+
+            .chip {
+                font-size: 0.65rem;
+                padding: 3px 8px;
+            }
+
+            .talented-badge {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+                top: -10px;
+                right: -10px;
+            }
+
+            /* Wali Card Mobile Portrait */
+            .wali-card {
+                padding: 20px 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                grid-column: 1 / -1;
+                margin-bottom: 15px;
+            }
+
+            .wali-card .teacher-badge {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                top: -10px;
+                right: -10px;
+            }
+
+            .wali-card .teacher-photo {
+                width: 85px;
+                height: 85px;
+                margin: 5px auto 15px;
+            }
+
+            .wali-card .teacher-name {
+                font-size: 0.95rem;
+                text-align: center;
+                margin-bottom: 8px;
+            }
+
+            .wali-card .teacher-role {
+                font-size: 0.8rem;
+                text-align: center;
+                margin-top: 5px;
+            }
+            
+            .award-card {
+                padding: 20px;
+            }
+            
+            .award-icon {
+                font-size: 2.5rem;
+                margin-bottom: 15px;
+            }
+            
+            .award-title {
+                font-size: 1.1rem;
+                margin-bottom: 8px;
+            }
+            
+            .award-description {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+            
+            .footer {
+                padding: 20px 0;
+            }
+            
+            .footer p {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Extra Small Mobile (max-width: 375px) */
+        @media (max-width: 375px) {
+            .container {
+                padding: 0 10px;
+            }
+            
+            .hero-section h1 {
+                font-size: 1.8rem;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .student-card {
+                padding: 8px;
+                display: grid;
+                grid-template-columns: 45px 1fr;
+                gap: 10px;
+                align-items: center;
+            }
+            
+            .student-photo {
+                width: 45px;
+                height: 45px;
+                border: 2px solid #41b381;
+                margin: 0;
+                grid-row: 1 / 3;
+                align-self: center;
+            }
+            
+            .student-name {
+                font-size: 0.8rem;
+                margin-bottom: 2px;
+                line-height: 1.2;
+                font-weight: 600;
+                text-align: left;
+                grid-column: 2;
+            }
+            
+            .student-role {
+                font-size: 0.7rem;
+                text-align: left;
+                grid-column: 2;
+            }
+
+            .chips {
+                grid-column: 2;
+                grid-row: 3;
+                margin-top: 4px;
+                justify-content: flex-start;
+            }
+
+            /* Wali Card Extra Small */
+            .wali-card {
+                padding: 18px 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .wali-card .teacher-photo {
+                width: 75px;
+                height: 75px;
+                margin-right: 0;
+            }
+
+            .wali-card .teacher-name {
+                text-align: center;
+                margin-bottom: 8px;
+            }
+
+            .wali-card .teacher-role {
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+
+        /* Very Small Mobile (max-width: 320px) */
+        @media (max-width: 320px) {
+            .container {
+                padding: 0 8px;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+            
+            .student-card {
+                padding: 6px;
+                min-height: auto;
+                display: grid;
+                grid-template-columns: 40px 1fr;
+                gap: 8px;
+                align-items: center;
+            }
+            
+            .student-photo {
+                width: 40px;
+                height: 40px;
+                border: 1px solid #41b381;
+                margin: 0;
+                grid-row: 1 / 3;
+                align-self: center;
+            }
+            
+            .student-name {
+                font-size: 0.75rem;
+                font-weight: 600;
+                text-align: left;
+                grid-column: 2;
+            }
+            
+            .student-role {
+                font-size: 0.65rem;
+                text-align: left;
+                grid-column: 2;
+            }
+
+            .chips {
+                grid-column: 2;
+                grid-row: 3;
+                margin-top: 4px;
+                justify-content: flex-start;
+            }
+
+            .chip {
+                font-size: 0.65rem;
+                padding: 3px 6px;
+            }
+
+            .talented-badge {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+                top: -8px;
+                right: -8px;
+            }
+
+            /* Wali Card Very Small */
+            .wali-card {
+                padding: 15px 10px;
+            }
+
+            .wali-card .teacher-badge {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+                top: -8px;
+                right: -8px;
+            }
+
+            .wali-card .teacher-photo {
+                width: 70px;
+                height: 70px;
+            }
+
+            .wali-card .teacher-name {
+                font-size: 0.75rem;
+                margin-bottom: 6px;
+            }
+
+            .wali-card .teacher-role {
+                font-size: 0.7rem;
+                margin-top: 4px;
+            }
+            
+            .class-info, .students-section, .awards-section {
+                padding: 15px;
+            }
+        }
+
+        /* Scroll animations */
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .scroll-animate.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* CTA styles */
+        .hero-actions {
+            margin-top: 22px;
+            display: inline-flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+            border: 0;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #41b381, #4ba285);
+            color: #fff;
+            box-shadow: 0 6px 16px rgba(65, 179, 129, 0.35);
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.9);
+            color: #276a5a;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        }
+        .btn:focus-visible {
+            outline: 3px solid #ffd700;
+            outline-offset: 2px;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .btn:active { transform: translateY(0); }
+
+        /* Skip link */
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        .skip-link:focus {
+            left: 10px;
+            top: 10px;
+            width: auto;
+            height: auto;
+            padding: 8px 12px;
+            background: #000;
+            color: #fff;
+            border-radius: 6px;
+            z-index: 2000;
+        }
+    </style>
+</head>
+<body>
+    <a href="#home" class="skip-link">Lewati ke konten utama</a>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="https://smkmetland.net/ppdb/wp-content/uploads/2022/11/cropped-cropped-cropped-LOGO-SMK-METLAND2-copy-1024x1024-4.png" alt="SMK Pariwisata Metland School Logo" />
+                    </div>
+                    <div class="school-info">
+                        <h1>SMK Pariwisata Metland School</h1>
+                        <p>Cileungsi</p>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#students">Siswa</a></li>
+                        <li><a href="#awards">Penghargaan</a></li>
+                        <li><a href="#info">Info Kelas</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1 class="fade-in-up">Kelas X PPLG 1</h1>
+                <p class="fade-in-up">Program Pengembangan Perangkat Lunak dan Gim - Generasi Digital Masa Depan</p>
+                <div class="hero-actions" aria-label="Tindakan utama">
+                    <a class="btn btn-primary" href="#students" aria-label="Lihat daftar anggota kelas">Lihat Anggota</a>
+                    <a class="btn btn-secondary" href="#info" aria-label="Baca info kelas">Info Kelas</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Class Info Section -->
+        <section id="info" class="class-info scroll-animate">
+            <div class="container">
+                <h2>Tentang Kelas X PPLG 1</h2>
+                <div class="class-description">
+                    <p>Kelas X PPLG 1 adalah kelas yang berfokus pada pengembangan perangkat lunak dan gim. 
+                    Siswa-siswa di kelas ini akan mempelajari berbagai teknologi modern seperti pemrograman web, 
+                    mobile development, game development, dan teknologi AI. Dengan kurikulum yang terstruktur 
+                    dan pengajar yang berpengalaman dan asikk dongg, kami siap mencetak generasi developer masa depan yang 
+                    kompeten dan inovatif cihuy.</p>
+                </div>
+                <div class="structure-contact" aria-label="Struktur organisasi dan kontak">
+                    <div class="students-grid" style="margin-bottom:0; gap:20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                        <div class="student-card" style="cursor:default;">
+                            <div class="student-name">Ketua Kelas</div>
+                            <div class="student-role">Alvano Darmansyah</div>
+                        </div>
+                        <div class="student-card" style="cursor:default;">
+                            <div class="student-name">Wakil Ketua</div>
+                            <div class="student-role">Haykal wildan firdaus</div>
+                        </div>
+                        <div class="student-card" style="cursor:default;">
+                            <div class="student-name">Sekretaris</div>
+                            <div class="student-role">Keysa, Galzerin Gloxinia Tetelepta</div>
+                        </div>
+                        <div class="student-card" style="cursor:default;">
+                            <div class="student-name">Bendahara</div>
+                            <div class="student-role">Gevin, Leon</div>
+                        </div>
+                    </div>
+                    <div style="text-align:center; margin-top:20px;">
+                        <a class="btn btn-secondary" href="https://www.instagram.com/cepuluhpplgcatu?igsh=MTQ3aWhzOG5wNXc2ag==" target="_blank" rel="noopener" aria-label="Instagram Kelas">IG Kelas</a>
+                        <a class="btn btn-primary" href="#gallery" aria-label="Lihat galeri kegiatan">Lihat Galeri</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Students Section -->
+        <section id="students" class="students-section scroll-animate">
+            <div class="container">
+                <h2>Anggota Kelas X PPLG 1</h2>
+                <div class="students-grid">
+                    <!-- Wali Kelas -->
+                    <div class="student-card wali-card">
+                        <div class="teacher-badge">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="student-photo teacher-photo">
+                            <img src="images/Winda%20Sulistio%20Ningsih,%20S.S.jpg" alt="Winda Sulistio Ningsih, S.S " />
+                        </div>
+                        <div class="student-name teacher-name">Winda Sulistio Ningsih, S.S</div>
+                        <div class="student-role teacher-role">Wali Kelas</div>
+                    </div>
+
+                    <!-- Siswa 1-25 -->
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Alvano%20Darmansyah.jpg" alt="Alvano Darmansyah" />
+                        </div>
+                        <div class="student-name">Alvano Darmansyah</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Ketua</span><span class="chip">basket</span><span class="chip">Drummer</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/ARCKO%20TAMALOVE.jpg" alt="ARCKO TAMALOVE" />
+                        </div>
+                        <div class="student-name">ARCKO TAMALOVE</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">King Kalcer</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="talented-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="student-photo">
+                            <img src="images/Arthur%20Elshaddai%20Prasetyo.jpeg" alt="Arthur Elshaddai Prasetyo" />
+                        </div>
+                        <div class="student-name">Arthur Elshaddai Prasetyo</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Drummer</span><span class="chip">Gitaris</span><span class="chip">Sains Nasional</span><span class="chip">Codinger</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/bryand%20liaw%20san.jpg" alt="bryand liaw san" />
+                        </div>
+                        <div class="student-name">bryand liaw san</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Humble</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Chandra%20Giri%20Kusumajaya.png" alt="Chandra Giri Kusumajaya" />
+                        </div>
+                        <div class="student-name">Chandra Giri Kusumajaya</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">meme</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Daffa%20Almer%20Dzaky.png" alt="Daffa Almer Dzaky" />
+                        </div>
+                        <div class="student-name">Daffa Almer Dzaky</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">murid ambatukam</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Dariel%20ahta%20wibowo.png" alt="Dariel ahta wibowo" />
+                        </div>
+                        <div class="student-name">Dariel ahta wibowo</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Anime</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Darrel%20Satya%20Laksono.jpg" alt="Darrel Satya Laksono" />
+                        </div>
+                        <div class="student-name">Darrel Satya Laksono</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Roblox</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/denniz%20pardomuan%20hutabarat.jpg" alt="denniz pardomuan hutabarat" />
+                        </div>
+                        <div class="student-name">denniz pardomuan hutabarat</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Tier 1 Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Evan%20Hendra%20Mulyadi.jpg" alt="Evan Hendra Mulyadi" />
+                        </div>
+                        <div class="student-name">Evan Hendra Mulyadi</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">anonim</span><span class="chip">Codinger</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Fransisco%20Valentino.jpeg" alt="Fransisco Valentino" />
+                        </div>
+                        <div class="student-name">Fransisco Valentino</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Gamer Magic Chess</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Galzerin%20Gloxinia%20Tetelepta.jpg" alt="Galzerin Gloxinia Tetelepta" />
+                        </div>
+                        <div class="student-name">Galzerin Gloxinia Tetelepta</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Gitar Bass</span><span class="chip">Metal</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="https://ui-avatars.com/api/?background=random&name=Guest&size=150" alt="Gevin" />
+                        </div>
+                        <div class="student-name">Gevin</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Bendahara</span><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="https://ui-avatars.com/api/?background=random&name=Guest&size=150" alt="Haykal wildan firdaus" />
+                        </div>
+                        <div class="student-name">Haykal wildan firdaus</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Wakil</span><span class="chip">Sigma</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Ibrahim.jpg" alt="Ibrahim" />
+                        </div>
+                        <div class="student-name">Ibrahim</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Anime</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Jack%20Steven%20sihotang.jpg" alt="Jack Steven sihotang" />
+                        </div>
+                        <div class="student-name">Jack Steven sihotang</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Billiard</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Khaulfi%20alfarisy.jpg" alt="Khaulfi alfarisy" />
+                        </div>
+                        <div class="student-name">Khaulfi alfarisy</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Keysia.png" alt="Keysia" />
+                        </div>
+                        <div class="student-name">Keysia</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Sekretaris</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Leon%20Manuel%20Nadeak.png" alt="Leon Manuel Nadeak" />
+                        </div>
+                        <div class="student-name">Leon Manuel Nadeak</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/M%20Azka%20Derin%20Sulaeman.jpg" alt="M Azka Derin Sulaeman" />
+                        </div>
+                        <div class="student-name">M Azka Derin Sulaeman</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Anak Malam</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="https://ui-avatars.com/api/?background=random&name=Guest&size=150" alt="Marvel Viki Prince Runtuwene" />
+                        </div>
+                        <div class="student-name">Marvel Viki Prince Runtuwene</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="talented-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="student-photo">
+                            <img src="images/Natan.jpg" alt="Natan" />
+                        </div>
+                        <div class="student-name">Natan</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Pianist</span><span class="chip">Gitarist</span><span class="chip">Drummer</span><span class="chip">Basket</span><span class="chip">Futsal</span><span class="chip">Codinger</span><span class="chip">Billiard</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/PATUR%20MARCELIO%20LIMBONG.png" alt="PATUR MARCELIO LIMBONG" />
+                        </div>
+                        <div class="student-name">PATUR MARCELIO LIMBONG</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">NTC</span><span class="chip">Humoris</span><span class="chip">Codinger</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/QABIL%20AIKDZEIDR%20SUHADI.png" alt="QABIL AIKDZEIDR SUHADI" />
+                        </div>
+                        <div class="student-name">QABIL AIKDZEIDR SUHADI</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Reinhart%20althaf.jpg" alt="Reinhart althaf" />
+                        </div>
+                        <div class="student-name">Reinhart althaf</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Vincent%20lim.jpg" alt="Vincent lim" />
+                        </div>
+                        <div class="student-name">Vincent lim</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Coding</span><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Sabila.png" alt="Sabila" />
+                        </div>
+                        <div class="student-name">Sabila</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Anonim</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="awards-section scroll-animate">
+            <div class="container">
+                <h2>Penghargaan Kelas</h2>
+                <div class="awards-grid">
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="award-title">Kelas Terbaik</div>
+                        <div class="award-description">Terbaik dalam bidang olahraga salah satunya adalah olahraga basket cuyy, di sini semua sesepuh basket. kalo mau nantang mending mundur aja!</div>
+                    </div>
+
+                
+
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="award-title">Inovasi Terbaik</div>
+                        <div class="award-description">Penghargaan untuk inovasi terbaik dalam pengembangan website</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="awards-section scroll-animate" aria-label="Galeri Kegiatan">
+            <div class="container">
+                <h2>Galeri Kegiatan</h2>
+                <div class="awards-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px;">
+                    <a href="images/XPPLG1.jpg" class="gallery-item" data-caption="Foto Kelas" aria-label="Buka foto kelas">
+                        <img src="images/XPPLG1.jpg" alt="Foto kelas X PPLG 1" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/Kegiatan%202.jpg" class="gallery-item" data-caption="Kegiatan 2" aria-label="Buka foto kegiatan">
+                        <img src="images/Kegiatan%202.jpg" alt="Kegiatan 2" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/Kegiatan%203.jpg" class="gallery-item" data-caption="Kegiatan 3" aria-label="Buka foto kegiatan">
+                        <img src="images/Kegiatan%203.jpg" alt="Kegiatan 3" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/kegiatan%205.jpg" class="gallery-item" data-caption="Kegiatan 5" aria-label="Buka foto kegiatan">
+                        <img src="images/kegiatan%205.jpg" alt="Kegiatan 5" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/kegiatan%206.jpg" class="gallery-item" data-caption="Kegiatan 6" aria-label="Buka foto kegiatan">
+                        <img src="images/kegiatan%206.jpg" alt="Kegiatan 6" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/kegiatan%207.jpg" class="gallery-item" data-caption="Kegiatan 7" aria-label="Buka foto kegiatan">
+                        <img src="images/kegiatan%207.jpg" alt="Kegiatan 7" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/kegiatan%209%20.jpg" class="gallery-item" data-caption="Kegiatan 9" aria-label="Buka foto kegiatan">
+                        <img src="images/kegiatan%209%20.jpg" alt="Kegiatan 9" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/kegiatan%2010.jpg" class="gallery-item" data-caption="Kegiatan 10" aria-label="Buka foto kegiatan">
+                        <img src="images/kegiatan%2010.jpg" alt="Kegiatan 10" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kelas X PPLG 1 - SMK Pariwisata Metland School Cileungsi. All rights reserved.</p>
+            <p style="margin-top: 10px;">Kontak Admin: <a href="https://wa.me/6285930008505" target="_blank" rel="noopener" style="color: #41b381; text-decoration: none;">+62 859 3000 8505</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all scroll-animate elements
+        document.querySelectorAll('.scroll-animate').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Lazy-load non-critical images
+        document.querySelectorAll('#students img, #gallery img').forEach(img => {
+            if (!img.hasAttribute('loading')) img.setAttribute('loading', 'lazy');
+            img.decoding = 'async';
+        });
+
+        // Student card hover effects (reduced on small screens)
+        function bindCardHover() {
+            const small = window.matchMedia('(max-width: 575px)').matches;
+            document.querySelectorAll('.student-card').forEach(card => {
+                card.onmouseenter = small ? null : function(){ this.style.transform = 'translateY(-10px) scale(1.05)'; };
+                card.onmouseleave = small ? null : function(){ this.style.transform = 'translateY(0) scale(1)'; };
+            });
+        }
+        bindCardHover();
+
+        // Award card hover effects
+        document.querySelectorAll('.award-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Lightweight lightbox for gallery
+        (function(){
+            const overlay = document.createElement('div');
+            overlay.id = 'lightboxOverlay';
+            overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);display:none;align-items:center;justify-content:center;z-index:2000;padding:16px;';
+            const img = document.createElement('img');
+            img.alt = '';
+            img.style.cssText = 'max-width:95%;max-height:90%;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.5)';
+            overlay.appendChild(img);
+            overlay.addEventListener('click', ()=> overlay.style.display = 'none');
+            document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') overlay.style.display='none'; });
+            document.body.appendChild(overlay);
+            document.querySelectorAll('.gallery-item').forEach(a=>{
+                a.addEventListener('click', function(ev){
+                    ev.preventDefault();
+                    img.src = this.getAttribute('href');
+                    overlay.style.display = 'flex';
+                })
+            });
+        })();
+
+        // Add parallax effect to hero section (desktop only)
+        if (window.innerWidth > 767) {
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const hero = document.querySelector('.hero-section');
+                if (hero) {
+                    hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+                }
+            });
+        }
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            const icon = this.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navMenu.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 767) {
+                navMenu.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+            bindCardHover();
+        });
+    </script>
+</body>
+</html>
